@@ -1,13 +1,13 @@
-# Front-end Style Guide
+# Guía de estilo Front-end
 
 ## Layout
 
-The designs were created to the following widths:
+Los diseños se crearon con las siguientes anchuras:
 
 - Mobile: 375px
 - Desktop: 1440px
 
-> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+> 💡 Estos son sólo los tamaños de diseño. Asegúrate de que el contenido es adaptable y cumple los requisitos WCAG probando toda la gama de tamaños de pantalla, desde 320px hasta pantallas grandes.
 
 ## Colors
 
@@ -37,4 +37,4 @@ The designs were created to the following widths:
 - Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
 - Weights: 700
 
-> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) para acceder a los archivos de diseño, ver todos los detalles del diseño y adquirir experiencia práctica utilizando un flujo de trabajo profesional con herramientas como Figma.
