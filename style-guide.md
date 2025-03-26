@@ -36,5 +36,3 @@ Los diseños se crearon con las siguientes anchuras:
 
 - Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
 - Weights: 700
-
-> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) para acceder a los archivos de diseño, ver todos los detalles del diseño y adquirir experiencia práctica utilizando un flujo de trabajo profesional con herramientas como Figma.
