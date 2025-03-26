@@ -15,6 +15,12 @@
     .attribution {
       font-size: 11px;
       text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--cream);
+      padding: 10px 0;
     }
 
     .attribution a {
@@ -36,8 +42,128 @@
     --grey: hsl(228, 12%, 48%);
     --cream: hsl(30, 38%, 92%);
     --white: hsl(0, 0%, 100%);
+  }
 
+  body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream);
+  } 
 
+  .product-card {
+    background-color: var(--white);
+    display: flex;
+    width: 700px;
+    height: 500px; /* Set a specific height */
+    border-radius: 10px;
+    box-shadow: var(--grey) 0px 10px 20px;
+    overflow: hidden;
+    margin-top: 90px;
+    margin-bottom: 50px;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px 0 0 10px; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .product-description {
+    width: 100%;
+    height: auto; /* Adjust height to fit content */
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } 
+
+  .product-description h1 {
+    color: var(--grey);
+    letter-spacing: 3px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-paragraph);
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+
+  .product-description h2 {
+    color: var(--black);
+    font-family: var(--font-family-fraunces);
+    font-weight: var(--font-weight-fraunces-bold);
+    font-size: 40px;
+    margin-top: 10px;
+    padding: 0 20px;
+  }
+
+  .product-description p {
+    color: var(--grey);
+    font-size: var(--font-size-paragraph);
+    padding: 0 20px;
+    line-height: 1.9;
+  }
+
+  .product-prices {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .product-prices p {
+    color: var(--green-500);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-paragraph);
+    margin: 0px;
+  }
+
+  .current-price {
+    font-size: 40px;
+    font-family: var(--font-family-fraunces);
+    color: var(--green-500); /* Added color for current price */
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: var(--grey);
+    font-size: 15px;
+    margin-left: 20px; /* Add spacing between the prices */
+    display: inline-block; /* Ensure it behaves as an inline-block element */
+    text-align: center; /* Center the text within the element */
+  }
+
+  .add-to-cart {
+    background-color: var(--green-500);
+    color: var(--white);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-paragraph);
+    padding: 15px 100px;
+    border-radius: 5px;
+    margin: 20px auto; /* Center horizontally */
+    cursor: pointer;
+    display: block; /* Ensure it behaves as a block element for centering */
+    text-align: center; /* Center text inside the button */
+  }
+
+  .add-to-cart img {
+    margin-right: 10px; /* Add spacing between the icon and the text */
+    vertical-align: middle; /* Align the icon vertically with the text */
+  }
+  .add-to-cart:hover {
+    background-color: var(--green-700);
+  }
+  
+  .add-to-cart:focus {
+    outline: 2px solid var(--green-500);
+    outline-offset: 2px;
   }
   </style>
 </head>
@@ -46,7 +172,7 @@
   <div class="product-card">
     <!-- Product Image Section -->
     <div class="product-image">
-      </figure><img src="images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum">
+        <img src="images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum">
     </div>
     <div class="product-description">
       <h1>Perfume</h1>
@@ -54,11 +180,10 @@
       <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
         Perfumer-Creator for the House of CHANEL.</p>
       <div class="product-prices">
-        <p>$149.99</p>
-        <p>$169.99</p>
+        <p><span class="current-price">$149.99</span> <span class="original-price">$169.99</span></p>
       </div>
       <button class="add-to-cart">
-        <img src="images/cart-icon.png" alt="Cart Icon"> Add to Cart
+         <img src="images/icon-cart.svg" alt="Cart Icon">Add to cart 
       </button>
     </div>
   </div>
