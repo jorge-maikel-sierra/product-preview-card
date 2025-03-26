@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -30,7 +33,7 @@
   :root {
     --mobile-width: 375px;
     --desktop-width: 1440px;
-    --font-family: 'Montserrat', sans-serif;
+    --font-family: 'Montserrat', 'Roboto', sans-serif;
     --font-weight-regular: 500;
     --font-weight-bold: 700;
     --font-family-fraunces: 'Fraunces', serif;
@@ -90,7 +93,7 @@
   .product-description h1 {
     color: var(--grey);
     letter-spacing: 3px;
-    font-weight: var(--font-weight-bold);
+    font-weight: 500;
     font-size: var(--font-size-paragraph);
     margin-top: 30px;
     padding: 0 20px;
@@ -120,7 +123,7 @@
 
   .product-prices p {
     color: var(--green-500);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-family-fraunces);
     font-size: var(--font-size-paragraph);
     margin: 0px;
   }
@@ -128,13 +131,14 @@
   .current-price {
     font-size: 40px;
     font-family: var(--font-family-fraunces);
+    font-weight: var(--font-weight-fraunces-bold);
     color: var(--green-500); /* Added color for current price */
   }
   
   .original-price {
     text-decoration: line-through;
     color: var(--grey);
-    font-size: 15px;
+    font-size: var(--font-weight-bold);
     margin-left: 20px; /* Add spacing between the prices */
     display: inline-block; /* Ensure it behaves as an inline-block element */
     text-align: center; /* Center the text within the element */
@@ -166,7 +170,7 @@
     outline-offset: 2px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 375px) {
     .product-card {
       flex-direction: column;
       width: 375px;
@@ -200,7 +204,7 @@
     }
 
     .add-to-cart {
-      padding: 15px 50px;
+      padding: 10px 100px;
     }
     
   }
