@@ -165,6 +165,47 @@
     outline: 2px solid var(--green-500);
     outline-offset: 2px;
   }
+
+  @media (max-width: 768px) {
+    .product-card {
+      flex-direction: column;
+      width: 375px;
+      height: 800px;
+      margin-top: 20px;
+    }
+
+    .product-image {
+      height: 50%;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .product-description {
+      height: 50%;
+    }
+
+    .product-description h1 {
+      margin-top: 20px;
+    }
+
+    .product-description h2 {
+      font-size: 30px;
+    }
+
+    .product-description p {
+      padding: 0 20px;
+    }
+
+    .product-prices {
+      padding: 0 20px;
+    }
+
+    .add-to-cart {
+      padding: 15px 50px;
+    }
+    
+  }
+
+
   </style>
 </head>
 
