@@ -1,111 +1,110 @@
-# Frontend Mentor - Product preview card component solution
+# Frontend Mentor - API REST de países con solución de cambio de tema de color
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+## Tabla de contenidos
 
-## Table of contents
+- [Resumen](#resumen)
+  - [El reto](#el-reto)
+  - [Capturas de pantalla](#capturas-de-pantalla)
+  - [Enlaces](#enlaces)
+- [Mi proceso](#mi-proceso)
+  - [Construido con](#construido-con)
+  - [Lo que aprendí](#lo-que-aprendí)
+  - [Desarrollo continuo](#desarrollo-continuo)
+  - [Recursos útiles](#recursos-útiles)
+- [Autor](#autor)
+- [Agradecimientos](#agradecimientos)
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+## Resumen
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+### El reto
 
-## Overview
+Los usuarios deberían poder:
 
-### The challenge
+- Ver el diseño óptimo para el sitio dependiendo del tamaño de la pantalla de su dispositivo.
+- Ver estados interactivos para los elementos interactivos.
+- Agregar productos al carrito (simulación).
 
-Users should be able to:
+## Guía de estilos
 
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+La guía completa de estilos y decisiones de diseño se encuentra en [style-guide.md](./style-guide.md).
 
-### Screenshot
+### Capturas de pantalla
 
-![](./screenshot.jpg)
+![Vista previa del diseño en escritorio](desktop-preview.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+### Enlaces
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+- URL de solución: [URL GITHUB](https://github.com/jorge-maikel-sierra/countries-explorer-webapp)
+- URL del sitio en directo: [URL PRODUCCION](https://jorge-maikel-sierra.github.io/countries-explorer-webapp)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+## Mi proceso
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+### Construido con
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML5 semántico
+- Propiedades personalizadas de CSS
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Diseño adaptable (responsive design)
+- Flujo de trabajo mobile-first
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+### Lo que aprendí
 
-### What I learned
+Durante este proyecto, reforcé mis conocimientos en HTML y CSS. Algunos puntos clave incluyen:
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- **Diseño adaptable**: Aprendí a usar media queries para ajustar el diseño según el tamaño de la pantalla.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@media (max-width: 768px) {
+  .product-card {
+    flex-direction: column;
+    width: 375px;
+    height: 800px;
+  }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+- **Uso de variables CSS**: Implementé variables para mantener consistencia en los colores y tipografía.
+
+```css
+:root {
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+- **Estilización de botones interactivos**: Aprendí a manejar estados como `hover` y `focus` para mejorar la experiencia del usuario.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```css
+.add-to-cart:hover {
+  background-color: var(--green-700);
+}
 
-### Continued development
+.add-to-cart:focus {
+  outline: 2px solid var(--green-500);
+  outline-offset: 2px;
+}
+```
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+### Desarrollo continuo
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Quiero seguir mejorando mis habilidades en CSS avanzado, especialmente en áreas como animaciones y transiciones, para crear experiencias más dinámicas y atractivas.
 
-### Useful resources
+### Recursos útiles
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [W3Schools](https://www.w3schools.com/) - Una excelente fuente de recursos y tutoriales que me ayudó a reforzar conceptos de JavaScript y HTML.
+- [CSS3 - MDN Web Docs](https://developer.mozilla.org/es/docs/Web/CSS) - Documentación detallada sobre CSS que fue fundamental para implementar los estilos y el tema oscuro.
+- [CSS Tricks](https://css-tricks.com/) - Un recurso útil para aprender técnicas avanzadas de CSS.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+## Autor
 
-## Author
+- GitHub - [@jorge-maikel-sierra](https://github.com/jorge-maikel-sierra)
+- Frontend Mentor - [@jorge-maikel-sierra](https://www.frontendmentor.io/profile/jorge-maikel-sierra)
+- Twitter - [@Jorge_Sierra_1](https://x.com/Jorge_Sierra_1)
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+## Agradecimientos
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Quiero expresar mi más profundo agradecimiento a Nolger Rodriguez por su continuo apoyo y colaboración. Gracias por creer en mí, tanto como desarrollador como persona. Tu confianza y guía han sido fundamentales en mi crecimiento profesional y personal.
