@@ -1,4 +1,4 @@
-# Frontend Mentor - API REST de países con solución de cambio de tema de color
+# Frontend Mentor - Product Preview Card
 
 ## Tabla de contenidos
 
@@ -34,8 +34,8 @@ La guía completa de estilos y decisiones de diseño se encuentra en [style-guid
 
 ### Enlaces
 
-- URL de solución: [URL GITHUB](https://github.com/jorge-maikel-sierra/countries-explorer-webapp)
-- URL del sitio en directo: [URL PRODUCCION](https://jorge-maikel-sierra.github.io/countries-explorer-webapp)
+- URL de solución: [URL GITHUB](https://github.com/jorge-maikel-sierra/product-preview-card)
+- URL del sitio en directo: [URL PRODUCCION](https://jorge-maikel-sierra.github.io/product-preview-card)
 
 ## Mi proceso
 
